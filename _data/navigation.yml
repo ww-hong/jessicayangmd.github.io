@@ -1,0 +1,7 @@
+main:
+  - title: "About Me"
+    url: /about/
+  - title: "Policies and Fees"
+    url: /policies-fees/
+  - title: "Contact"
+    url: /contact/
