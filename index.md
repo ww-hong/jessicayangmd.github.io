@@ -10,5 +10,5 @@ header:
   actions:
     - label: "Contact"
       url: "/contact/"
-excerpt: "I am a board-certified psychiatrist who treats children, adolescents, and adults. I believe in a holistic approach where I will listen carefully to your personal narrative and seek to understand your current struggles so that we can pursue a comprehensive and effective treatment together. I am experienced in treating a variety of conditions, including mood disorders, anxiety disorders, eating disorders, attention and behavioral issues, and parent-child relational difficulties."
+excerpt: "I am a board-certified psychiatrist who evaluates and treats children, adolescents, and adults. My approach is focused on being thoughtful, compassionate, and collaborative, with the goal of helping you or your child effectively work through issues so that you can navigate your daily life with insightfulness, resilience, and emotional wellness. I am experienced in treating a variety of conditions, including mood disorders, anxiety disorders, eating disorders, attention and behavioral issues, and parent-child or other relational difficulties. I have special interest in working with school-aged children and their families."
 ---

@@ -3,5 +3,7 @@ main:
     url: /about/
   - title: "Policies and Fees"
     url: /policies-fees/
+  - title: "Services"
+    url: /services/
   - title: "Contact"
     url: /contact/
