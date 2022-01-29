@@ -1,6 +1,6 @@
 ---
 title: Fees
-permalink: /policies-fees/
+permalink: /fees/
 ---
 
 Fees are dependent on the type and length of appointment. For a fee schedule, please submit an initial inquiry as outlined under the Contact page.

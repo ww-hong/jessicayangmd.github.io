@@ -1,8 +1,8 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "Policies and Fees"
-    url: /policies-fees/
+  - title: "Fees"
+    url: /fees/
   - title: "Services"
     url: /services/
   - title: "Contact"
