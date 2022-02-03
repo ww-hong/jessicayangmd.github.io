@@ -24,7 +24,7 @@ email: jessica@jessicayangmd.com
 description: >- # this means to ignore newlines until "baseurl:"
   New York State Licensed Child Psychiatrist. Remote video visits or telephone appointments. Personalized therapy and prescription medicine management.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.jessicayangmd.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jessicayangmd.com" # the base hostname & protocol for your site, e.g. http://example.com
 name: Jessica Yang
 twitter_username: jekyllrb
 github_username:  jekyll
