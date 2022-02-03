@@ -1,8 +1,8 @@
 ---
-layout: splash
 title: Welcome
 permalink: /
-date: 2021-12-29
+layout: splash
+date: 2022-02-03
 header:
   overlay_color: rgb(277,142,145)
   overlay_filter: "0.3"
@@ -10,5 +10,5 @@ header:
   actions:
     - label: "Contact"
       url: "/contact/"
-excerpt: "I am a board-certified psychiatrist who evaluates and treats children, adolescents, and adults. My approach is focused on being thoughtful, compassionate, and collaborative, with the goal of helping you or your child effectively work through issues so that you can navigate your daily life with insightfulness, resilience, and emotional wellness. I am experienced in treating a variety of conditions, including mood disorders, anxiety disorders, eating disorders, attention and behavioral issues, and parent-child or other relational difficulties. I have special interest in working with school-aged children and their families."
+excerpt: "I am a board-certified psychiatrist who treats children, adolescents, and adults. My approach is focused on being thoughtful, compassionate, and collaborative, with the goal of helping you understand the core issues at hand and work toward making lasting positive change. I am experienced in treating a variety of conditions, including mood disorders, anxiety, OCD, eating disorders, attention and behavioral issues, and parent-child or other relational difficulties. Currently I am able to see patients in Maryland and New York via telehealth. Please feel free to reach out for a free phone consultation to see if we are a good fit."
 ---
