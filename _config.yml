@@ -40,6 +40,10 @@ plugins:
   - jekyll-include-cache
 atom_feed:
   hide: true
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-LL1T0VYTBR"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
