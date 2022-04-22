@@ -44,6 +44,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-LL1T0VYTBR"
+    anonymize_ip: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
