@@ -41,7 +41,7 @@ plugins:
 atom_feed:
   hide: true
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-LL1T0VYTBR"
 
