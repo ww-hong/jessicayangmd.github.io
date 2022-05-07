@@ -43,7 +43,7 @@ atom_feed:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-LL1T0VYTBR"
+    tracking_id: "GTM-52852G2"
     anonymize_ip: false
 
 # Exclude from processing.
