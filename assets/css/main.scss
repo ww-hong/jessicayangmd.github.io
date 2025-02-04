@@ -23,29 +23,15 @@ label {
   display:inline;
 }
 
-legend {
-    margin-bottom: 10px;
+#checkbox_location,#checkbox_insurance {
+    margin: 10px 0;
 }
 
-/* Space between radio options */
-fieldset div {
-    margin-bottom: 5px;
-}
-/* Remove margin from last radio option */
-fieldset div:last-child {
-    margin-bottom: 0;
-}
-
-/* Checkbox section spacing */
-#checkboxSection {
-    margin-top: 20px;
-}
-
-#checkboxSection > div {
+#insurance {
     margin-top: 10px;
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 5px 10px;
 }

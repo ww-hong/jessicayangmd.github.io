@@ -1,46 +1,46 @@
 <form id="patient-inquiry">
-  <fieldset>
-    <legend>Dr. Yang is able to treat patients located in New York and Maryland via telepsychiatry-only practice. If I require in-person services, I understand that Dr. Yang may be unable to provide this and may direct me to other providers.</legend>
+  <div id="location">
+    <span>Dr. Yang treats patients located in New York and Maryland via telepsychiatry, with in-person availability for patients residing in Maryland.</span>
     <div>
-      <input type="radio" id="newyork" name="locationstate" value="NY" required>
-      <label for="newyork">I am located in New York</label>
-    </div>
-    <div>
-      <input type="radio" id="maryland" name="locationstate" value="MD">
-      <label for="maryland">I am located in Maryland</label>
-    </div>
-  </fieldset>
-
-  <div id="checkboxSection" class="hidden">
-    <span>Dr. Yang does not participate in insurance plans but can provide a superbill for out-of-network benefits. New intakes for adults are 1-2 visits totaling 90 minutes for $700. New intakes for children/adolescents are 2-3 visits totaling 120 minutes for $800. Follow-up visits are $300 for 30 minutes and $400 for 50 minutes.</span>
-    <div>
-      <input type="checkbox" id="acknowledgment" name="acknowledgment">
-      <label for="acknowledgment">I understand</label>
+      <input type="checkbox" id="checkbox_location">
+      <label for="checkbox_location">I understand</label>
     </div>
   </div>
-  <a href="https://calendly.com/jessicayangmd/15-minute-inquiry-call" id="calendlyButton" class="hidden">
+  <div id="insurance" class="hidden">
+    <span>Dr. Yang does not participate in insurance plans but can provide a superbill for any out-of-network benefits. Please email <a href="mailto:md@jessicayangmd.com">md@jessicayangmd.com</a> directly for current rates and practice policies.</span>
+    <div>
+      <input type="checkbox" id="checkbox_insurance">
+      <label for="checkbox_insurance">I understand</label>
+    </div>
+  </div>
+  <a href="https://calendly.com/jessicayangmd/15-minute-inquiry-call" id="button_calendly" class="hidden">
     <button type="button">Schedule 15 Minute Inquiry Call</button>
   </a>
 </form>
 <script>
   const form = document.getElementById('patient-inquiry');
-  const checkboxSection = document.getElementById('checkboxSection');
-  const radioButtons = document.querySelectorAll('input[name="locationstate"]');
-  const checkbox = document.getElementById('acknowledgment');
-  const button = document.getElementById('calendlyButton');
+
+  const section_location = document.getElementById('location');
+  const checkbox_location = document.getElementById('checkbox_location');
+
+  const section_insurance = document.getElementById('insurance');
+  const checkbox_insurance = document.getElementById('checkbox_insurance');
+
+  const button_schedule = document.getElementById('button_calendly');
 
   function updateVisibility() {
-    // If any radio is checked, show checkbox
-    const isRadioSelected = document.querySelector('input[name="locationstate"]:checked');
-    if (isRadioSelected) {
-      checkboxSection.classList.remove('hidden');
+    // If location checkbox is checked, show insurance checkbox
+    if (checkbox_location.checked) {
+      section_insurance.classList.remove('hidden');
+    } else {
+      section_insurance.classList.add('hidden');
     }
 
-    // If checkbox is checked, show URL button
-    if (checkbox.checked) {
-      button.classList.remove('hidden');
+    // If insurance checkbox is checked, show schedule button
+    if (checkbox_location.checked && checkbox_insurance.checked) {
+      button_schedule.classList.remove('hidden');
     } else {
-      button.classList.add('hidden');
+      button_schedule.classList.add('hidden');
     }
   }
 
@@ -50,10 +50,6 @@
   // Check conditions when navigating back
   window.addEventListener('pageshow', updateVisibility);
 
-  // Regular event listeners for changes
-  radioButtons.forEach(radio => {
-    radio.addEventListener('change', updateVisibility);
-  });
-
-  checkbox.addEventListener('change', updateVisibility);
+  checkbox_location.addEventListener('change', updateVisibility);
+  checkbox_insurance.addEventListener('change', updateVisibility);
 </script>
