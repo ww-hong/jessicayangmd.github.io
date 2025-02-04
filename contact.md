@@ -3,7 +3,7 @@ title: Contact
 permalink: /contact/
 ---
 
-For prospective new patients, please submit the following inquiry form. You may indicate if you would like to schedule a complimentary 15 minute call.
+For prospective new patients, please fill out the following form to schedule a complimentary 15 minute call.
 
 {% include contact-form.html %}
 
