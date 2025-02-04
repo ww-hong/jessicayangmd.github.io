@@ -18,3 +18,34 @@
 .page__content {
   font-size: $type-size-6;
 }
+
+label {
+  display:inline;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+/* Space between radio options */
+fieldset div {
+    margin-bottom: 5px;
+}
+/* Remove margin from last radio option */
+fieldset div:last-child {
+    margin-bottom: 0;
+}
+
+/* Checkbox section spacing */
+#checkboxSection {
+    margin-top: 20px;
+}
+
+#checkboxSection > div {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 10px;
+}

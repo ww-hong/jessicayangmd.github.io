@@ -1,40 +1,59 @@
-<form
-    id="patient-inquiry"
-    action="https://formspree.io/f/xyyrlwlb"
-    method="POST"
-    >
-  <label for="patient-name">Patient Name*</label>
-  <input type="text" name="patient-name" id="patient-name" required>
+<form id="patient-inquiry">
+  <fieldset>
+    <legend>Dr. Yang is able to treat patients located in New York and Maryland via telepsychiatry-only practice. If I require in-person services, I understand that Dr. Yang may be unable to provide this and may direct me to other providers.</legend>
+    <div>
+      <input type="radio" id="newyork" name="locationstate" value="NY" required>
+      <label for="newyork">I am located in New York</label>
+    </div>
+    <div>
+      <input type="radio" id="maryland" name="locationstate" value="MD">
+      <label for="maryland">I am located in Maryland</label>
+    </div>
+  </fieldset>
 
-  <label for="parent-name"> Parent/guardian Name (if applicable)</label>
-  <input type="text" name="parent-name" id="parent-name">
-
-  <label for="patient-birthday">Patient Date of Birth*</label>
-  <input type="date" name="patient-birthday" id="patient-birthday" min="1900-01-01" required>
-
-  <label for="patient-gender">Patient Gender*</label>
-  <input type="text" name="patient-gender" id="patient-gender" required>
-
-  <label for="email">Email*</label>
-  <input type="email" name="email" id="email" required>
-
-  <label for="phone">Phone Number*</label>
-  <input type="tel" name="phone" id="phone" pattern="(?:\([0-9]{3}\)|[0-9]{3}-?)\s?[0-9]{3}[\- ]?[0-9]{4}" title="Please enter a phone number in the format XXX-XXX-XXXX" required>
-
-  <label for="state">State of Residence*</label>
-  <select name="state" id="state" required>
-    <option value="" disabled selected></option>
-    <option value="md">Maryland</option>
-    <option value="ny">New York</option>
-  </select>
-
-  <label for="patient-school">Patient School and Grade (if applicable)</label>
-  <input type="text" name="patient-school" id="patient-school">
-
-  <label for="referral">Referral Source</label>
-  <input type="text" name="referral" id="referral">
-
-  <label for="reason">Reason for Appointment*</label>
-  <textarea name="reason" rows="4" id="reason" required></textarea>
-  <button type="submit">Submit</button>
+  <div id="checkboxSection" class="hidden">
+    <span>Dr. Yang does not participate in insurance plans but can provide a superbill for out-of-network benefits. New intakes for adults are 1-2 visits totaling 90 minutes for $700. New intakes for children/adolescents are 2-3 visits totaling 120 minutes for $800. Follow-up visits are $300 for 30 minutes and $400 for 50 minutes.</span>
+    <div>
+      <input type="checkbox" id="acknowledgment" name="acknowledgment">
+      <label for="acknowledgment">I understand</label>
+    </div>
+  </div>
+  <a href="https://calendly.com/jessicayangmd/15-minute-inquiry-call" id="calendlyButton" class="hidden">
+    <button type="button">Schedule 15 Minute Inquiry Call</button>
+  </a>
 </form>
+<script>
+  const form = document.getElementById('patient-inquiry');
+  const checkboxSection = document.getElementById('checkboxSection');
+  const radioButtons = document.querySelectorAll('input[name="locationstate"]');
+  const checkbox = document.getElementById('acknowledgment');
+  const button = document.getElementById('calendlyButton');
+
+  function updateVisibility() {
+    // If any radio is checked, show checkbox
+    const isRadioSelected = document.querySelector('input[name="locationstate"]:checked');
+    if (isRadioSelected) {
+      checkboxSection.classList.remove('hidden');
+    }
+
+    // If checkbox is checked, show URL button
+    if (checkbox.checked) {
+      button.classList.remove('hidden');
+    } else {
+      button.classList.add('hidden');
+    }
+  }
+
+  // Check conditions on page load
+  window.addEventListener('load', updateVisibility);
+
+  // Check conditions when navigating back
+  window.addEventListener('pageshow', updateVisibility);
+
+  // Regular event listeners for changes
+  radioButtons.forEach(radio => {
+    radio.addEventListener('change', updateVisibility);
+  });
+
+  checkbox.addEventListener('change', updateVisibility);
+</script>
