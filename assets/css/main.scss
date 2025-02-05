@@ -8,23 +8,26 @@
 @import "minimal-mistakes"; // main partials
 
 .site-title {
-  font-size: $type-size-4;
+    font-size: $type-size-4;
 }
 
 .page__lead {
-  font-size: $type-size-5;
+    font-size: $type-size-5;
 }
 
 .page__content {
-  font-size: $type-size-6;
+    font-size: $type-size-6;
 }
 
 label {
-  display:inline;
+    margin-bottom: 0;
 }
 
-#checkbox_location,#checkbox_insurance {
-    margin: 10px 0;
+div.checkbox {
+    margin: 5px 0;
+    display: flex !important;
+    align-items: center !important; /* Aligns items vertically */
+    gap: 8px !important; /* Adds spacing between checkbox and label */
 }
 
 #insurance {
@@ -32,6 +35,6 @@ label {
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 5px 10px;
 }
