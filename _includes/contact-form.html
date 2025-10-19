@@ -29,15 +29,8 @@
   const button_schedule = document.getElementById('button_calendly');
 
   function updateVisibility() {
-    // If location checkbox is checked, show insurance checkbox
+    // If location checkbox is checked, show schedule button
     if (checkbox_location.checked) {
-      section_insurance.classList.remove('hidden');
-    } else {
-      section_insurance.classList.add('hidden');
-    }
-
-    // If insurance checkbox is checked, show schedule button
-    if (checkbox_location.checked && checkbox_insurance.checked) {
       button_schedule.classList.remove('hidden');
     } else {
       button_schedule.classList.add('hidden');
