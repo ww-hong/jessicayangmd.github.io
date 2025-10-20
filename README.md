@@ -7,4 +7,4 @@
 1. sudo bundle install
 1. bundle add webrick
 1. bundle update github-pages
-1. bundle exec jekyll serve
+1. bundle exec jekyll serve --port=4001
