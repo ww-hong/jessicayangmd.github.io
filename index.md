@@ -10,5 +10,5 @@ header:
   actions:
     - label: "Contact"
       url: "/contact/"
-excerpt: "I am a board-certified psychiatrist who treats children, adolescents, and adults. My approach is focused on being thoughtful, compassionate, and collaborative, with the goal of helping you understand the core issues at hand and work toward making lasting positive change. I am experienced in treating a variety of conditions, including mood disorders, anxiety, OCD, eating disorders, attention and behavioral issues, and parent-child or other relational difficulties. Currently I am able to see patients in Maryland and New York via telehealth. Please feel free to reach out for a free phone consultation to see if we are a good fit."
+excerpt: "I am a double board-certified psychiatrist who treats children, adolescents, and adults. My approach is focused on being thoughtful, compassionate, and collaborative, with the goal of helping you understand the core issues at hand and work toward making lasting positive change. I am experienced in treating a variety of conditions, including mood disorders, anxiety, OCD, eating disorders, attention and behavioral issues, and parent-child or other relational difficulties. Currently I am able to see patients in Maryland and New York via telehealth. Please feel free to reach out for a free phone consultation to see if we are a good fit."
 ---
